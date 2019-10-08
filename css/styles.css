@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+#photo-search {
+    margin: 10px 0 25px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border-color: lightgray;
+}
+
+
+@media screen and (min-width: 768px) {
+    .image-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    .image-wrapper a {
+        width: 48%;
+    }
+
+    #photo-search {
+        width: 50%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 90%;
+        margin: auto;
+    }
+    
+    .image-wrapper a {
+        width: 21%;
+    }
+
+    #photo-search {
+        margin-bottom: 35px;
+    }
+}
